@@ -16,7 +16,7 @@ Live:
 </b>
 
 # Related Projects
-- [Hero Page 2](https://github.com/TylrPopcorn/Hero-Page-2) - _Creating simple hero pages with BootStrap HTML_
+- [Hero Page 2](https://github.com/TylrPopcorn/Hero-Page-2) - _Creating simple hero pages with BootStrap & HTML_
 - [Hero Page 1](https://github.com/TylrPopcorn/Hero-Page-1) - _Creating simple hero pages with BootStrap & HTML_
 - [Svelte Basics](https://github.com/TylrPopcorn/Svelte-Basics) - *The basics of Svelte.js and how to use*
 - [Projects List](https://github.com/TylrPopcorn/Projects-List) - _Explore other projects I have worked on_
