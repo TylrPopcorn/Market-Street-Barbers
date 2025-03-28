@@ -1,0 +1,449 @@
+/** CSS **/
+/** CSS **/
+/** CSS **/
+:root {
+  --bckgrnd-color: #141414;
+  --button-color: #f17f7f;
+  --button-color-hover: #a85959;
+  --footer-color: #302e2e;
+}
+/* ---------- */
+html,
+body {
+  background-color: var(--bckgrnd-color);
+}
+
+/* ---------- NAV BAR  SECTION ---------- */
+.navbar {
+  height: 180px;
+  position: absolute;
+  z-index: 9;
+}
+
+.navbar .navbar-brand .navbar-LOGO {
+  background: url("/imgs/LOGO.png") center center/cover no-repeat;
+  height: 12rem;
+  width: 280px;
+}
+
+.navbar-nav .nav-item {
+  margin-top: 15px;
+  margin-right: 20px;
+}
+
+.navbar-nav .nav-item .nav-link {
+  color: white;
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+
+  text-align: center;
+  border: 1px solid white;
+  border-radius: 50px;
+
+  transition: all 0.1s ease-in-out;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(15px);
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  border: 1px solid black;
+}
+
+/* ---------- HERO SECTION ---------- */
+.Hero {
+  background: url("/imgs/img_1.png") center center/cover no-repeat;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+.HeroSection {
+  position: relative;
+  color: white;
+
+  min-height: 1050px;
+  overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.HeroSection .Hero-Center-Content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  padding: 1rem;
+  text-align: center;
+}
+
+.HeroSection .Hero-Center-Content .hero-title {
+  font-size: 125px;
+  font-weight: bold;
+  font-family: "Playfair Display", serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  margin-bottom: 2rem;
+}
+
+.HeroSection .Hero-Center-Content .hero-book-btn {
+  background-color: var(--button-color);
+  color: #ffff;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  margin-top: 2rem;
+  font-size: 25px;
+  border-radius: 0.6rem;
+  font-weight: 600;
+  font-family: "Montserrat";
+  margin-bottom: 150px;
+}
+
+.HeroSection .Hero-Center-Content .hero-book-btn:hover {
+  background-color: var(--button-color-hover);
+}
+
+.HeroSection .Hero-Center-Content-2 {
+  position: absolute;
+  bottom: 5rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.HeroSection .Hero-Center-Content-2 .hero-arrow {
+  background-image: url("/imgs/img_2.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 4rem;
+  height: 2rem;
+}
+
+/* ---------- ABOUT US SECTION ---------- */
+.AboutUs {
+  padding-top: 10px;
+  background-color: var(--bckgrnd-color);
+  padding-bottom: 40px;
+}
+
+.AboutUs .ABT-title-section {
+  background: url("/imgs/img_3.png") center center/cover no-repeat;
+  min-height: 400px;
+  overflow: hidden;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.AboutUs .ABT-title-section .ABT-Center-Content {
+  color: white;
+  font-family: "Playfair Display", serif;
+  font-size: 80px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  letter-spacing: 0.05em;
+}
+
+.AboutUs .ABT-pg-section {
+  margin-top: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  color: white;
+  font-family: "Montserrat";
+  font-size: 30px;
+  font-weight: 200;
+  line-height: 2.2;
+
+  opacity: 0.7;
+}
+
+.AboutUs .ABT-img {
+  margin-top: 50px;
+  background: url("/imgs/img_4.png") center center/cover no-repeat;
+  min-height: 25vh;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* ---------- OUR TEAM SECTION ---------- */
+.OurTeam {
+  padding-top: 30px;
+  background-color: var(--bckgrnd-color);
+  padding-bottom: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.OurTeam .OurTeam-Header {
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  font-family: "Playfair Display", serif;
+  font-size: 60px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.OurTeam .Cards {
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+
+  margin-bottom: 5rem;
+}
+
+.OurTeam .Cards .Col .Card {
+  background-color: white;
+  padding: 0.7rem;
+  border-radius: 20px;
+  position: relative;
+}
+
+.OurTeam .Cards .Col .Card .card-1-img {
+  background: url("/imgs/img_5.png") center center/cover no-repeat;
+  width: 100%;
+  height: 500px;
+
+  border-radius: 20px;
+  border: none;
+}
+
+.OurTeam .Cards .Col .Card .card-2-img {
+  background: url("/imgs/img_6.png") center center/cover no-repeat;
+  width: 100%;
+  height: 500px;
+
+  border-radius: 20px;
+}
+
+.OurTeam .Cards .Col .Card .Stylist-Text {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  color: #000000;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 4px 25px;
+  border-radius: 2rem;
+  z-index: 10;
+  font-weight: 500;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.OurTeam .Cards .Col .Card-Info {
+  margin-top: 1.3rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+
+  line-height: 1;
+}
+
+.OurTeam .Cards .Col .Card-Info .Card-Title {
+  font-family: "Montserrat";
+  font-size: 40px;
+  font-weight: 200;
+}
+
+.OurTeam .Cards .Col .Card-Info .Card-Paragraph {
+  font-family: "Montserrat";
+  font-size: 25px;
+  font-weight: 200;
+}
+
+.OurTeam .Cards .Col .Card-Info .OurTeam-book-btn {
+  background-color: var(--button-color);
+  color: #000;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  margin-top: 1rem;
+  font-size: 15px;
+  border-radius: 1rem;
+  font-weight: 600;
+  font-family: "Montserrat";
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.OurTeam .Cards .Col .Card-Info .OurTeam-book-btn:hover {
+  background-color: var(--button-color-hover);
+}
+
+/* ---------- GALLERY SECTION ---------- */
+.Gallery {
+  padding-top: 10px;
+  background-color: var(--bckgrnd-color);
+  padding-bottom: 40px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.Gallery .carousel {
+  width: 100%;
+  min-height: 25vh;
+  border: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.Gallery .carousel .carousel-inner .carousel-item .carousel_IMG1 {
+  height: 40rem;
+
+  background: url("/imgs/img_7.png") center center/cover no-repeat;
+}
+
+.Gallery .carousel .carousel-inner .carousel-item .carousel_IMG2 {
+  height: 40rem;
+  background: url("/imgs/img_8.png") center center/cover no-repeat;
+}
+
+.Gallery .carousel .carousel-inner .carousel-item .carousel_IMG3 {
+  height: 40rem;
+  background: url("/imgs/img_9.png") center center/cover no-repeat;
+}
+
+/* ---------- CTA SECTION ---------- */
+.CTA {
+  padding-top: 10px;
+  background-color: var(--bckgrnd-color);
+  padding-bottom: 50px;
+}
+
+.CTA .CTA-Content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  color: white;
+}
+
+.CTA .CTA-Content .CTA-Title {
+  font-family: "Montserrat";
+  font-size: 60px;
+  font-weight: 800;
+  text-align: center;
+}
+
+.CTA .CTA-Content .CTA-Paragraph {
+  margin-top: 40px;
+  font-size: 30px;
+  text-align: center;
+  font-weight: 200;
+  width: 55%;
+  opacity: 0.8;
+  font-family: "Montserrat";
+  line-height: 1.8;
+}
+
+/* ---------- FOOTER SECTION ---------- */
+.Footer {
+  padding-top: 20px;
+  background-color: var(--footer-color);
+  padding-bottom: 20px;
+}
+
+.Footer .Footer-wrapper .Footer-row {
+  height: 100%;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 20px;
+  overflow: hidden;
+}
+
+.Footer .Footer-wrapper .Footer-row .Footer-logo-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.Footer .Footer-wrapper .Footer-row .Footer-logo {
+  background: url("/imgs/LOGO.png") center center/cover no-repeat;
+  height: 9rem;
+  width: 210px;
+}
+
+.Footer .Footer-wrapper .Footer-row .Footer-Hours {
+  font-family: "Montserrat";
+}
+
+.Footer .Footer-wrapper .Footer-row .Footer-Header {
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  font-size: 25px;
+  margin-bottom: 1.1rem;
+}
+
+.Footer .Footer-wrapper .Footer-row .Footer-Content {
+  font-size: 15px;
+  line-height: 1.1;
+  font-weight: 300;
+  letter-spacing: 1.5px;
+  text-decoration: none;
+  color: white;
+}
+
+.Footer .Footer-wrapper .Footer-row .Footer-Contact-Social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.Footer .Footer-wrapper .Footer-row .Footer-Contact-Social .Footer-Contact {
+  margin-bottom: 1rem;
+}
+
+.Footer .Footer-wrapper .Footer-row .Footer-Social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.Footer .Footer-wrapper .Footer-row .Footer-Social .Footer-Social-Instagram {
+  background: url("/imgs/instagram.png") center center/cover no-repeat;
+  height: 2.5rem;
+  width: 40px;
+}
+
+.Footer .Footer-wrapper .Footer-row .Footer-Maps .MAP {
+  height: 15rem;
+  margin: 0 auto;
+}
