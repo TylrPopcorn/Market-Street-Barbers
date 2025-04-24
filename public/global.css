@@ -81,7 +81,7 @@ body {
 }
 
 .HeroSection .Hero-Center-Content .hero-title {
-  font-size: 125px;
+  font-size: clamp(4rem, 10vw, 125px);
   font-weight: bold;
   font-family: "Playfair Display", serif;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
@@ -94,7 +94,7 @@ body {
   padding-right: 2rem;
   padding-left: 2rem;
   margin-top: 2rem;
-  font-size: 25px;
+  font-size: clamp(1rem, 2.5vw, 25px);
   border-radius: 0.6rem;
   font-weight: 600;
   font-family: "Montserrat";
@@ -146,7 +146,7 @@ body {
 .AboutUs .ABT-title-section .ABT-Center-Content {
   color: white;
   font-family: "Playfair Display", serif;
-  font-size: 80px;
+  font-size: clamp(3rem, 8vw, 80px);
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
   letter-spacing: 0.05em;
 }
@@ -161,7 +161,7 @@ body {
 
   color: white;
   font-family: "Montserrat";
-  font-size: 30px;
+  font-size: clamp(1.25rem, 4vw, 30px);
   font-weight: 200;
   line-height: 2.2;
 
@@ -174,6 +174,12 @@ body {
   min-height: 25vh;
   overflow: hidden;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 480px) {
+  .AboutUs .ABT-img {
+    min-height: 45vh;
+  }
 }
 
 /* ---------- OUR TEAM SECTION ---------- */
@@ -197,7 +203,7 @@ body {
   justify-content: center;
 
   font-family: "Playfair Display", serif;
-  font-size: 60px;
+  font-size: clamp(2rem, 6vw, 60px);
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
@@ -263,15 +269,19 @@ body {
   line-height: 1;
 }
 
+.OurTeam .Cards .Col2 {
+  margin-top: 15rem;
+}
+
 .OurTeam .Cards .Col .Card-Info .Card-Title {
   font-family: "Montserrat";
-  font-size: 40px;
+  font-size: clamp(1.5rem, 5vw, 40px);
   font-weight: 200;
 }
 
 .OurTeam .Cards .Col .Card-Info .Card-Paragraph {
   font-family: "Montserrat";
-  font-size: 25px;
+  font-size: clamp(1rem, 3vw, 25px);
   font-weight: 200;
 }
 
@@ -281,7 +291,7 @@ body {
   padding-right: 2rem;
   padding-left: 2rem;
   margin-top: 1rem;
-  font-size: 15px;
+  font-size: clamp(0.75rem, 2vw, 15px);
   border-radius: 1rem;
   font-weight: 600;
   font-family: "Montserrat";
@@ -290,6 +300,20 @@ body {
 
 .OurTeam .Cards .Col .Card-Info .OurTeam-book-btn:hover {
   background-color: var(--button-color-hover);
+}
+
+@media (max-width: 700px) {
+  .OurTeam .OurTeam-Header {
+    margin-bottom: 30px;
+  }
+
+  .OurTeam .Cards {
+    gap: 10px;
+  }
+
+  .OurTeam .Cards .Col2 {
+    margin-top: 50px;
+  }
 }
 
 /* ---------- GALLERY SECTION ---------- */
@@ -349,14 +373,14 @@ body {
 
 .CTA .CTA-Content .CTA-Title {
   font-family: "Montserrat";
-  font-size: 60px;
+  font-size: clamp(2rem, 6vw, 60px);
   font-weight: 800;
   text-align: center;
 }
 
 .CTA .CTA-Content .CTA-Paragraph {
   margin-top: 40px;
-  font-size: 30px;
+  font-size: clamp(1.25rem, 4vw, 30px);
   text-align: center;
   font-weight: 200;
   width: 55%;
