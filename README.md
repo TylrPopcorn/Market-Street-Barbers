@@ -1,7 +1,7 @@
 # ```Market-Street-Barbers```
 ```Book yourself a haircut online with Market Street Barbers.```
 
-Market Street Barbers is a modern barbershop booking website, originally designed in **[Figma](https://www.figma.com/)** and then converted into **[Svelte.js](https://svelte.dev/).** It features a seamless online booking system, a beautifully crafted UI, and a responsive layout that highlights the shop’s story, team, and services. This project demonstrates the process of transforming a high-fidelity design into an interactive and optimized web experience using Svelte.js, ensuring both performance and aesthetics.
+Market Street Barbers is a modern barbershop booking website, originally designed in **[Figma](https://www.figma.com/)** and then converted into **[Svelte](https://svelte.dev/).** It features a seamless online booking system, a beautifully crafted UI, and a responsive layout that highlights the shop’s story, team, and services. This project demonstrates the process of transforming a high-fidelity design into an interactive and optimized web experience using Svelte.js, ensuring both performance and aesthetics.
 
 Live: https://market-street-barbers.onrender.com/
 
@@ -22,7 +22,6 @@ Live: https://market-street-barbers.onrender.com/
 <b>Extra Resources:
 - Figma: https://www.figma.com/
 - Documentation: https://svelte.dev/docs/introduction
-- Svelte: https://svelte.dev/
 </b>
 
 # Related Projects
