@@ -21,7 +21,7 @@
             </a>
           </div>
         </div>
-        <div class="col-md-4 Col" style="margin-top: 15rem;">
+        <div class="col-md-4 Col Col2">
           <div class="Card">
             <div class="card-2-img"></div>
             <div class="Stylist-Text">Stylist</div>
