@@ -52,6 +52,13 @@ body {
   border: 1px solid black;
 }
 
+@media (max-width: 480px) {
+  .navbar .navbar-brand .navbar-LOGO {
+    height: 9rem;
+    width: 240px;
+  }
+}
+
 /* ---------- HERO SECTION ---------- */
 .Hero {
   background: url("/imgs/img_1.png") center center/cover no-repeat;
@@ -470,4 +477,10 @@ body {
 .Footer .Footer-wrapper .Footer-row .Footer-Maps .MAP {
   height: 15rem;
   margin: 0 auto;
+}
+
+@media (max-width: 480px) {
+  .Footer .Footer-wrapper .Footer-row .Footer-Maps .MAP {
+    margin-left: 10px;
+  }
 }
