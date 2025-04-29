@@ -178,7 +178,7 @@ body {
 .AboutUs .ABT-img {
   margin-top: 50px;
   background: url("/imgs/img_4.png") center center/cover no-repeat;
-  min-height: 25vh;
+  min-height: 50vh;
   overflow: hidden;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
@@ -309,7 +309,7 @@ body {
   background-color: var(--button-color-hover);
 }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
   .OurTeam .OurTeam-Header {
     margin-bottom: 30px;
   }
